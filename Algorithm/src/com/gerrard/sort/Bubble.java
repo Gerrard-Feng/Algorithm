@@ -37,4 +37,9 @@ public class Bubble {
 			}
 		}
 	}
+	
+	// ”≈ªØ√∞≈›≈≈–Ú2
+	public static void optimized_2(int[] array) {
+		
+	}
 }
