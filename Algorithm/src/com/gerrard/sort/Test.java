@@ -5,7 +5,7 @@ import java.util.Random;
 public class Test {
 
 	public static void main(String[] args) {
-		final int LENGTH = 20;
+		final int LENGTH = 10;
 		int[] a = new int[LENGTH];
 		int[] b = new int[LENGTH];
 		int[] c = new int[LENGTH];
