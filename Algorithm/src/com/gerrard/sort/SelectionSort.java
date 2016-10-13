@@ -18,7 +18,10 @@ public class SelectionSort {
 					minIndex = j;
 				}
 			}
-			swap(i, minIndex, array);
+			// 判断第一个是不是最小值，是的话可以不用交换
+			if (i != minIndex) {
+				swap(i, minIndex, array);
+			}
 		}
 	}
 
@@ -43,12 +46,16 @@ public class SelectionSort {
 					maxIndex = j;
 				}
 			}
-			swap(i, minIndex, array);
-			// 防止最大数在第一个，优先和最小数进行交换
-			if (i == maxIndex) {
-				swap(array.length - 1 - i, minIndex, array);
-			} else {
-				swap(array.length - 1 - i, maxIndex, array);
+			if (i != minIndex) {
+				swap(i, minIndex, array);
+			}
+			if (array.length - 1 - i != maxIndex) {
+				// 防止最大数在第一个，优先和最小数进行交换
+				if (i == maxIndex) {
+					swap(array.length - 1 - i, minIndex, array);
+				} else {
+					swap(array.length - 1 - i, maxIndex, array);
+				}
 			}
 		}
 	}
