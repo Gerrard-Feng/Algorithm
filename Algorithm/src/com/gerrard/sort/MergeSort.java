@@ -2,17 +2,20 @@ package com.gerrard.sort;
 
 import java.util.Arrays;
 
+// 归并排序
 public class MergeSort {
 
 	public static void basal(int array[]) {
+		// 待合并数组长度
 		int length = 1;
 		while (length < array.length) {
 			for (int i = 0; i < array.length; i += 2 * length) {
+				// array1的长度不足时，表示之后数组已经有序
 				if (array.length - i < length) {
 					continue;
 				}
 				int[] array1 = Arrays.copyOfRange(array, i, i + length);
-				// array2的长度是不定的（最后一个数组的长度在0-length之间）
+				// array2的长度不足时，需要确定具体长度
 				int remainLength = array.length - i - length;
 				if (remainLength > length) {
 					remainLength = length;
@@ -49,7 +52,7 @@ public class MergeSort {
 					resultArray[i] = array1[index1];
 					index1++;
 				} else {
-					resultArray[i] = array1[index2];
+					resultArray[i] = array2[index2];
 					index2++;
 				}
 				// 一次赋值之后，做一次是否存在数组已经读完的判断
@@ -68,14 +71,5 @@ public class MergeSort {
 			}
 		}
 		return resultArray;
-	}
-
-	private static void merge1(int[] array, int iStart, int jStart, int jEnd) {
-		// 定义两个数组的长度，永远存在length1>=length2
-		int length1 = jStart - iStart;
-		int length2 = jEnd - jStart + 1;
-		for (int i = 0; i < length1; i++) {
-
-		}
 	}
 }
