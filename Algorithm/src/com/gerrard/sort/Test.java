@@ -10,7 +10,7 @@ public class Test {
 		for (int i = 0; i < array.length; i++) {
 			array[i] = new Random().nextInt(100) + 1;
 		}
-		SelectionSort.optimized(array);
+		MergeSort.basal(array);
 
 		for (int a : array) {
 			System.out.print(a + " ");
