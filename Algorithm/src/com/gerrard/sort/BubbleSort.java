@@ -19,9 +19,9 @@ public class BubbleSort {
 
 	// 优化冒泡排序1
 	public static void optimized_1(int[] array) {
-		// 内循环数据交换标志
-		boolean hasSwaped = false;
 		for (int i = 0; i < array.length - 1; i++) {
+			// 内循环数据交换标志
+			boolean hasSwaped = false;
 			for (int j = 0; j < array.length - 1 - i; j++) {
 				if (array[j] > array[j + 1]) {
 					swap(j, j + 1, array);
