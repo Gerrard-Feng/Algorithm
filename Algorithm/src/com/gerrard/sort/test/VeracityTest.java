@@ -19,7 +19,7 @@ public class VeracityTest {
 		int[] array2 = Arrays.copyOf(array1, array1.length);
 
 		// 自己实现排序及官方排序
-		StraightInsertionSort.optimized_3(array1);
+		StraightInsertionSort.basal(array1);
 		Arrays.sort(array2);
 
 		// 比对结果

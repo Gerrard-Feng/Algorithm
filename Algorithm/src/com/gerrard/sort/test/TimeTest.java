@@ -16,7 +16,7 @@ public class TimeTest {
 		
 		// Ê±¼äÊä³ö£ºÄÉÃë
 		long s1 = System.nanoTime();
-		StraightInsertionSort.optimized_3(array);
+		StraightInsertionSort.basal(array);
 		long e1 = System.nanoTime();
 		System.out.println(e1 - s1);
 	}
