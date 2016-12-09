@@ -2,7 +2,8 @@ package com.gerrard.sort.test;
 
 import java.util.Random;
 
-import com.gerrard.sort.StraightInsertionSort;
+import com.gerrard.sort.Merge;
+import com.gerrard.sort.Shell;
 
 public class TimeTest {
 
@@ -16,7 +17,7 @@ public class TimeTest {
 		
 		// Ê±¼äÊä³ö£ºÄÉÃë
 		long s1 = System.nanoTime();
-		StraightInsertionSort.basal(array);
+		Merge.basal(array);
 		long e1 = System.nanoTime();
 		System.out.println(e1 - s1);
 	}

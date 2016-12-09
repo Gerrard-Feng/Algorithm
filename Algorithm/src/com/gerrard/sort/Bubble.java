@@ -1,7 +1,7 @@
 package com.gerrard.sort;
 
 // ц╟ещеепР
-public class BubbleSort {
+public class Bubble {
 
 	// ╩Ы╢║ц╟ещеепР
 	public static void basal(int[] array) {

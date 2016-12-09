@@ -3,7 +3,7 @@ package com.gerrard.sort;
 import java.util.Arrays;
 
 // 直接插入排序
-public class StraightInsertionSort {
+public class StraightInsertion {
 
 	public static void basal(int[] array) {
 		if (array == null || array.length < 2) {
@@ -49,6 +49,7 @@ public class StraightInsertionSort {
 					array[j + 1] = array[j];
 				}
 			}
+			// 剩余情况是：checkI 位置的数字，和其下一个坐标位置是相同的
 			// 循环判断+插入
 			boolean flag = false;
 			for (int j = start; j > -1; j--) {

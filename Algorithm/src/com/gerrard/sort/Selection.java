@@ -1,6 +1,6 @@
 package com.gerrard.sort;
 
-public class SelectionSort {
+public class Selection {
 
 	public static void basal(int[] array) {
 		if (array == null || array.length < 2) {

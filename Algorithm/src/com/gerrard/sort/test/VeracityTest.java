@@ -3,7 +3,9 @@ package com.gerrard.sort.test;
 import java.util.Arrays;
 import java.util.Random;
 
-import com.gerrard.sort.StraightInsertionSort;
+import com.gerrard.sort.Merge;
+import com.gerrard.sort.Shell;
+import com.gerrard.sort.StraightInsertion;
 
 public class VeracityTest {
 
@@ -19,7 +21,7 @@ public class VeracityTest {
 		int[] array2 = Arrays.copyOf(array1, array1.length);
 
 		// 自己实现排序及官方排序
-		StraightInsertionSort.basal(array1);
+		Merge.basal(array1);
 		Arrays.sort(array2);
 
 		// 比对结果
